@@ -58,7 +58,7 @@ def text_match(split_text, rule, response):
             return False
     """
 
-    # print(f"生成的程序是: {script}")
+    print(f"生成的程序是: {script}")
     exec(script)
     match = eval("_match(split_text)")
 
@@ -72,6 +72,7 @@ if __name__ == '__main__':
         "医生我昨天梦见一只山羊",
         "医生你为什么不去读个博士",
         "简直就是开玩笑",
+        "大壮和小强和小明还有秃头都是很坏的人"
     ]
 
     for text in test_cases:

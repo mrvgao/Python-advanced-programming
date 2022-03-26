@@ -21,5 +21,6 @@ class OldPerson:
 
 
 person = OldPerson()
-print(person)
 person.name = "Jack"
+print(person)
+

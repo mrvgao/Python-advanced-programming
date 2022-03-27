@@ -45,8 +45,7 @@ if __name__  == '__main__':
     print('programming running at {}'.format(datetime.datetime.now()))
     collect_results(files)
 
-    
-    
+
 
     
 

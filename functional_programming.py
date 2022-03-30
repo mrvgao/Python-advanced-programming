@@ -1,5 +1,6 @@
 import time
 import numpy as np
+from dataset import example_data
 
 
 def cache(f):
@@ -73,5 +74,5 @@ if __name__ == '__main__':
 
     M = np.random.random(size=(1000, 1000))
 
-    add_first_row(M)
-    add_with_broadcast(M)
+    #add_first_row(M)
+    #add_with_broadcast(M)

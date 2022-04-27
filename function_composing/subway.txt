@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>站点及周边信息 | 北京地铁官方网站</title>
+<meta name="keywords" content="北京地铁官方网站,地铁线路图,站内信息,站点首末车时间,公交换乘,服务设施,一卡通网点,站内立体示意图" />
+<meta name="description" content="北京地铁线路查询，站点详细信息查询，能够更高效的获取地铁出行路线，得知指定站点的详细信息，使出行更加方便快捷。" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="/subway/css/common.css" rel="stylesheet" type="text/css" />
+<link href="/subway/css/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/subway/js/jquery.js"></script>
+<script type="text/javascript" src="/subway/js/SubwayManager_min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?01cf1cc88df5ecf7e38164197b4a2001";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script> 
+<div class="header_top">
+          <div class="logo" onclick="javascript:window.location.href='/index.html'" onmouseover="this.style.backgroundColor='#e6edf5'" onmouseleave="this.style.backgroundColor='#fff'"  style="cursor:pointer"></div>
+          <div class="weather"><!--<script type="text/javascript" src="http://ext.weather.com.cn/45339.js"></script>--></div>
+          <div class="search">
+          	<div class="search_top">
+            	<!--<div class="lang">
+              	<ul>
+                    <li><a href="/">首&nbsp;页</a></li>
+                    <li><a href="javascript:void(0)">ENGLISH</a></li>
+                </ul>
+              </div>-->
+              <div class="info">
+              	<ul>
+                  <li style="text-align:left;"><a href="/" >网站首页</a></li>
+                  <li><a href="/support/xxgkzn/" >信息公开</a></li>
+                 
+                  <li><a href="/job/">人才招聘</a></li>
+                  <li style="text-align:right;"><a href="/contact/" target="_blank">联系我们</a></li>
+                  <li style="text-align:right;"><a href="/en/" >English</a></li>
+              	</ul>
+              </div>
+            </div>
+            <div class="search_bottom">
+            	<form  action='/e/sch/index.php' method="GET" >
+                    <input type="hidden" name="hh" value="LK">
+                    <input type=hidden name=classid value="115,170,62,63,104,70,265,266,267,268,269,270,271,272">
+            	    <input type="text" name="keyboard" class="text"  value=""/>
+               	    <input type="submit" name="Submit2" class="sub" value="" />
+              	</form>
+            </div>
+          </div>
+      </div>
+    <div class="banner_ej" id=oTransContainer  style="FILTER: progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0,wipeStyle=0, motion='forward')" ><img id=oDIV1 src="/subway/images/stationinfo/1.jpg"/><script>var NowFrame = 1;var MaxFrame = 5;var bStart = 0;function fnToggle(){var next = NowFrame + 1;if(next == MaxFrame+1) {NowFrame = MaxFrame;next = 1;}if(bStart == 0){bStart = 1;setTimeout('fnToggle()', 2000);return;}else{oTransContainer.filters[0].Apply();document.images['oDIV'+next].style.display = "";document.images['oDIV'+NowFrame].style.display = "none";oTransContainer.filters[0].Play(duration=2);if(NowFrame == MaxFrame){NowFrame = 1;}else{NowFrame++;}}	setTimeout('fnToggle()', 6000);}fnToggle();</script>
+          <img class=pic id=oDIV2 src="/subway/images/stationinfo/2.jpg" style="DISPLAY: none;">
+          <img  id=oDIV3 src="/subway/images/stationinfo/3.jpg" style="DISPLAY: none;">
+          <img  id=oDIV4 src="/subway/images/stationinfo/4.jpg" style="DISPLAY: none;">
+          <img  id=oDIV5 src="/subway/images/stationinfo/5.jpg" style="DISPLAY: none;">
+          <img  id=oDIV5 src="/subway/images/stationinfo/6.jpg" style="DISPLAY: none;">
+</div>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?01cf1cc88df5ecf7e38164197b4a2001";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<div class="header_nav">
+      <ul id="nav_zzjs">
+      <li class="menu" style="width:121px;">
+            <a href="http://map.bjsubway.com" class="title_ts1">地铁查询</a>
+            <dl class="submenu_zzjs">
+           	<dd><a href="http://map.bjsubway.com">线路图查询</a></dd>
+               <dd><a href="/station/zjgls/">站间距信息</a></dd>
+            	<dd><a href="/station/xltcx/">站点及周边信息</a></dd>
+            	<dd><a href="/station/smcsj/">首末车时间</a></dd>
+                <dd><a href="/station/xltcx/line1/">列车时刻表</a></dd>
+                <dd><a href="/station/fwss/line1/2013-08-19/4.html">服务设施</a></dd>
+                <dd><a href="/station/wzass/">无障碍服务设施</a></dd>
+            	<dd><a href="/station/yktfw/">一卡通服务网点</a></dd>
+               <dd><a href="/station/xltzs/">线路图下载</a></dd>
+               
+           </dl>
+          </li>
+          <li class="menu">
+          	<!--<a href="/support/cxyd/cxts/" class="title">乘客服务</a>-->
+                <a href="#" class="title">乘客服务</a>
+            <dl class="submenu_zzjs">
+                <!--<dd><a href="/support/cxyd/cxts/">出行引导</a></dd>-->
+                <dd><a href="/support/swzl/">失物招领</a></dd>
+                <dd><a href="/support/ccgd/">乘车规定</a></dd>
+                <dd><a href="/e/tool/gbook/?bid=4">常见问题</a></dd>
+            </dl>
+          </li>
+          <li class="menu">
+          	<a href="/news/qyxw/yyzd/" class="title">企业动态</a>
+            <dl class="submenu_zzjs">
+            	<dd><a href="/news/qyxw/yyzd/">地铁新闻</a></dd>
+            	<dd><a href="javascript:void(0)" style="color:#737373;  cursor:default">更新改造</a></dd>
+            	<dd><a href="/news/ghjs/">规划建设</a></dd>
+                <dd><a href="/news/qyxw/ygzj/">员工之家</a></dd>
+           </dl>
+          </li>
+          <li class="menu">
+          	<a href="/culture/dtzs/" class="title">地铁文化</a>
+           	<dl class="submenu_zzjs">
+            	<dd><a href="/culture/dtzs/">地铁知识</a></dd>
+            	<dd><a href="/culture/qywh/">企业文化</a></dd>
+                <dd><a href="/culture/ygzp/">员工展示</a></dd>
+           	</dl>
+          </li>
+          <li class="menu">
+          	<a href="/corporate/gsgk/"  class="title">走进地铁</a>
+                 <dl class="submenu_zzjs">
+            	<dd><a href="/corporate/gsgk/">公司概况</a></dd>
+           </dl>
+          </li>
+          <li class="menu">
+                <a href="/tsjlb/ckhd/" class="title">铁丝俱乐部</a>
+           	<dl class="submenu_zzjs">
+            	<dd><a href="/tsjlb/ckhd/">乘客活动</a></dd>
+                <dd><a href="/tsjlb/wjdc/">问卷调查</a></dd>
+            	<!--<dd><a href="/culture/zbcp/">周边产品</a></dd>-->
+           	</dl>
+          </li>
+          <li class="menu" style="">
+          	<a href="/support/ywgz/" class="title">延误告知</a>
+           	<dl class="submenu_zzjs">
+
+           	</dl>
+          </li>
+          <li class="menu" style="width:121px;">
+          	<a href="/wzcg/" class="title_ts7">物资采购</a>
+           	<dl class="submenu_zzjs">
+
+           	</dl>
+          </li>
+        </ul>
+        <script type="text/javascript">
+        var nav_zzjs = document.getElementById("nav_zzjs").childNodes;
+        for (var i=0;i<nav_zzjs.length;i++)
+        {
+        	if (nav_zzjs[i].className=="menu")
+         	{
+          		nav_zzjs[i].onmouseover = function(){fnNav(this,"block")};
+          		nav_zzjs[i].onmouseout = function(){fnNav(this,"none")};
+         	}
+        }
+        function fnNav(obj,flag)
+        {
+         	obj.getElementsByTagName("dl")[0].style.display = flag;
+        }
+        </script>
+      </div>
+            <div class="here"><a href="/">首页</a> > <a href="/station/xltcx/">地铁查询</a> > 站点及周边信息</div>
+
+    <!-- content start -->
+    <div class="content">
+        <div class="sub_map">
+            <div class="pagechange">
+                <!--<div class="pagechange_left"  id="0" ><a href="/station_map_xg.html">线路图查询</a></div>-->
+                <div class="pagechange_left s_current" id="1" ><a href="/station/xltcx/">站点及周边信息</a></div>
+            </div> 
+            <div class="line_content">
+                <div class="line_name">
+                    <div class="subway_num1">1号线/八通线</div>
+                </div>
+                                                               <div class="station">苹果园</div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/4.html">古城</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/5.html">八角游乐园</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/6.html">八宝山</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/7.html">玉泉路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/8.html">五棵松</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/9.html">万寿路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/10.html">公主坟</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/11.html">军事博物馆</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/12.html">木樨地</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/13.html">南礼士路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/14.html">复兴门</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-20/35.html">西单</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/15.html">天安门西</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/16.html">天安门东</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/17.html">王府井</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/18.html">东单</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/19.html">建国门</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/20.html">永安里</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/21.html">国贸</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/22.html">大望路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/23.html">四惠</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line1/2013-08-19/24.html">四惠东</a></div>
+                                                                     
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/38.html">高碑店</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/39.html">传媒大学</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/40.html">双桥</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/41.html">管庄</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/42.html">八里桥</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/43.html">通州北苑</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/44.html">果园</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/45.html">九棵树</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/46.html">梨园</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/47.html">临河里</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2013-08-20/48.html">土桥</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2019-12-26/560.html">花庄</a></div>
+                 
+                                  
+                            <div class="station"><a href="/station/xltcx/linebt/2021-08-25/582.html">环球度假区</a></div>
+                 
+                                 <div class="line_name">
+                    <div class="subway_num3">2号线</div>
+                </div>
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/25.html">西直门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/28.html">积水潭</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/29.html">鼓楼大街</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/30.html">安定门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/31.html">雍和宫</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/32.html">东直门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/33.html">东四十条</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-19/34.html">朝阳门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/260.html">建国门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/267.html">北京站</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/268.html">崇文门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/271.html">前门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/272.html">和平门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/273.html">宣武门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/274.html">长椿街</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/275.html">复兴门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/276.html">阜成门</a></div>
+                  
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/line2/2013-08-26/277.html">车公庄</a></div>
+                  
+                   
+                 
+                <div class="line_name">
+                    <div class="subway_num6">5号线</div>
+                </div>
+                                  <div class="station"><a href="/station/xltcx/line5/2013-08-21/49.html">宋家庄</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/50.html">刘家窑</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/51.html">蒲黄榆</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/52.html">天坛东门</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/53.html">磁器口</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/54.html">崇文门</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/55.html">东单</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/56.html">灯市口</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/57.html">东四</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/58.html">张自忠路</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/59.html">北新桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/60.html">雍和宫</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/61.html">和平里北街</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/62.html">和平西桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/63.html">惠新西街南口</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/64.html">惠新西街北口</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/65.html">大屯路东</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/66.html">北苑路北</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/67.html">立水桥南</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/68.html">立水桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/69.html">天通苑南</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/70.html">天通苑</a></div>
+                                   <div class="station"><a href="/station/xltcx/line5/2013-08-21/71.html">天通苑北</a></div>
+                                <div class="line_name">
+                    <div class="subway_num7">6号线</div>
+                </div>
+                                                               <div class="station"><a href="/station/xltcx/line6/2018-12-30/539.html">金安桥</a></div>
+                                                                                  <div class="station">苹果园</div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2018-12-30/541.html">杨庄</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2018-12-30/542.html">西黄村</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2018-12-30/543.html">廖公庄</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2018-12-30/544.html">田村</a></div>
+                                    
+                                                               <div class="station"><a href="/station/xltcx/line6/2013-08-22/125.html">海淀五路居</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-22/126.html">慈寿寺</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-22/127.html">花园桥</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/128.html">白石桥南</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/129.html">车公庄西</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/130.html">车公庄</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/131.html">平安里</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/132.html">北海北</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/133.html">南锣鼓巷</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/134.html">东四</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/135.html">朝阳门</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/136.html">东大桥</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/137.html">呼家楼</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/138.html">金台路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/139.html">十里堡</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/140.html">青年路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/141.html">褡裢坡</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/142.html">黄渠</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/143.html">常营</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2013-08-23/144.html">草房</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-24/429.html">物资学院路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-24/430.html">通州北关</a></div>
+                                                                                  <div class="station">通运门</div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-25/466.html">北运河西</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-25/467.html">北运河东</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-25/468.html">郝家府</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-25/469.html">东夏园</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line6/2014-12-25/470.html">潞城</a></div>
+                                   				<div class="line_name">
+                    <div class="subway_num18">7号线</div>
+                </div>
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/428.html">北京西站</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/433.html">湾子</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/436.html">达官营</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/447.html">广安门内</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/448.html">菜市口</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/449.html">虎坊桥</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/450.html">珠市口</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/451.html">桥湾</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/452.html">磁器口</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/453.html">广渠门内</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/454.html">广渠门外</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/455.html">双井</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/456.html">九龙山</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/457.html">大郊亭</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/458.html">百子湾</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/459.html">化工</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/460.html">南楼梓庄</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/461.html">欢乐谷景区</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/462.html">垡头</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/463.html">双合</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2014-12-24/464.html">焦化厂</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/562.html">黄厂</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/563.html">郎辛庄</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/564.html">黑庄户</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/565.html">万盛西</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/566.html">万盛东</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/567.html">群芳</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/568.html">高楼金</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2019-12-26/569.html">花庄</a></div>
+                   
+                                  
+                            <div class="station"><a href="/station/xltcx/lines7/2021-08-25/583.html">环球度假区</a></div>
+                   
+                                <div class="line_name">
+                    <div class="subway_num8">8号线</div>
+                </div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/360.html">朱辛庄</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/361.html">育知路</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/362.html">平西府</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/363.html">回龙观东大街</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/364.html">霍营</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/365.html">育新</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/366.html">西小口</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/367.html">永泰庄</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/368.html">林萃桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/369.html">森林公园南门</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/370.html">奥林匹克公园</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/371.html">奥体中心</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/372.html">北土城</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/373.html">安华桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/374.html">安德里北街</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/375.html">鼓楼大街</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/376.html">什刹海</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2013-12-27/377.html">南锣鼓巷</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/545.html">中国美术馆</a></div>
+                				                            <div class="station"><a href="/station/xltcx/line8/2021-12-29/589.html">金鱼胡同</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2021-12-29/588.html">王府井</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2021-12-29/587.html">前门</a></div>
+                				                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/546.html">珠市口</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/547.html">天桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/548.html">永定门外</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/549.html">木樨园</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/550.html">海户屯</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/552.html">大红门南</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/553.html">和义</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/554.html">东高地</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/555.html">火箭万源</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/556.html">五福堂</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/557.html">德茂</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2018-12-30/558.html">瀛海</a></div>
+                                            <div class="station"><a href="/station/xltcx/line8/2021-12-29/587.html">前门</a></div>
+                                <div class="line_name">
+                    <div class="subway_num9">9号线</div>
+                </div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/158.html">郭公庄</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/159.html">丰台科技园</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/160.html">科怡路</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/161.html">丰台南路</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/162.html">丰台东大街</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/163.html">七里庄</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/164.html">六里桥</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/165.html">六里桥东</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-08-23/166.html">北京西站</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-10-26/344.html">军事博物馆</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-10-26/345.html">白堆子</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-10-26/346.html">白石桥南</a></div>
+                                    <div class="station"><a href="/station/xltcx/line9/2013-10-26/347.html">国家图书馆</a></div>
+                                                    
+                <div class="line_name">
+                    <div class="subway_num10">10号线</div>
+                 </div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/170.html">巴沟</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/171.html">苏州街</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/172.html">海淀黄庄</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/173.html">知春里</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/174.html">知春路</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/175.html">西土城</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/176.html">牡丹园</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/177.html">健德门</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/178.html">北土城</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-23/179.html">安贞门</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/180.html">惠新西街南口</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/182.html">芍药居</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/185.html">太阳宫</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/187.html">三元桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/189.html">亮马桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/191.html">农业展览馆</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/192.html">团结湖</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/193.html">呼家楼</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/194.html">金台夕照</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/195.html">国贸</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/197.html">双井</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/199.html">劲松</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/201.html">潘家园</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/203.html">十里河</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/205.html">分钟寺</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/206.html">成寿寺</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/210.html">宋家庄</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/212.html">石榴庄</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/214.html">大红门</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/215.html">角门东</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/218.html">角门西</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/220.html">草桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/221.html">纪家庙</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/222.html">首经贸</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/224.html">丰台站</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/226.html">泥洼</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/229.html">西局</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/230.html">六里桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/232.html">莲花桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/234.html">公主坟</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/236.html">西钓鱼台</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/237.html">慈寿寺</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/238.html">车道沟</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/240.html">长春桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line10/2013-08-26/242.html">火器营</a></div>
+                 
+				<div class="line_name">
+                    <div class="subway_num6" style="background-color: #ed796a;">11号线</div>
+                </div>
+                                  <div class="station"><a href="/station/xltcx/line11/2021-12-29/592.html">金安桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/line11/2021-12-29/593.html">北辛安</a></div>
+                                   <div class="station"><a href="/station/xltcx/line11/2021-12-29/594.html">新首钢</a></div>
+                 
+                <div class="line_name">
+                    <div class="subway_num11">13号线</div>
+                </div>
+				                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/74.html">西直门</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/75.html">大钟寺</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/76.html">知春路</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/77.html">五道口</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/78.html">上地</a></div>
+                				                            <div class="station"><a href="/station/xltcx/line13/2019-12-26/561.html">清河站</a></div>
+                				                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/79.html">西二旗</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/80.html">龙泽</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/81.html">回龙观</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/82.html">霍营</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/83.html">立水桥</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/84.html">北苑</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/85.html">望京西</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/86.html">芍药居</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/87.html">光熙门</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/88.html">柳芳</a></div>
+                                            <div class="station"><a href="/station/xltcx/line13/2013-08-22/89.html">东直门</a></div>
+                                <div class="line_name">
+                    <div class="subway_num12">15号线</div>
+                </div>
+                                                               <div class="station"><a href="/station/xltcx/line15/2013-10-26/358.html">俸伯</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/357.html">顺义</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/356.html">石门</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/355.html">南法信</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/354.html">后沙峪</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/353.html">花梨坎</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/352.html">国展</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/351.html">孙河</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/350.html">马泉营</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/349.html">崔各庄</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-10-26/348.html">望京东</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-08-26/198.html">望京</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2013-08-26/196.html">望京西</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/440.html">关庄</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/441.html">大屯路东</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/442.html">安立路</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/446.html">奥林匹克公园</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/445.html">北沙滩</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/444.html">六道口</a></div>
+                                                                                  <div class="station"><a href="/station/xltcx/line15/2014-12-24/443.html">清华东路西口</a></div>
+                                    
+                <div class="line_name">
+                    <div class="subway_num14">昌平线</div>
+                </div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2015-12-18/496.html">昌平西山口</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2015-12-18/497.html">十三陵景区</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2015-12-18/498.html">昌平</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2015-12-18/499.html">昌平东关</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2015-12-18/500.html">北邵洼</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/245.html">南邵</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/246.html">沙河高教园</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/249.html">沙河</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/250.html">巩华城</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/251.html">朱辛庄</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/252.html">生命科学园</a></div>
+                                        <div class="station"><a href="/station/xltcx/linecp/2013-08-26/253.html">西二旗</a></div>
+                				                        <div class="station"><a href="/station/xltcx/linecp/2021-12-29/590.html">清河站</a></div>
+                                <div class="line_name">
+                    <div class="subway_num15">亦庄线</div>
+                 </div>
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/219.html">宋家庄</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/223.html">肖村</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/225.html">小红门</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/227.html">旧宫</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/228.html">亦庄桥</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/231.html">亦庄文化园</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/233.html">万源街</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/235.html">荣京东街</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/239.html">荣昌东街</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/241.html">同济南路</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/243.html">经海路</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/244.html">次渠南</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-08-26/247.html">次渠</a></div>
+                   
+                                   
+                            <div class="station"><a href="/station/xltcx/lineyz/2013-10-26/359.html">亦庄火车站</a></div>
+                   
+                 
+                <div class="line_name">
+                    <div class="subway_num13">房山线</div>
+                </div>
+                                     <div class="station"><a href="/station/xltcx/linefs/2020-12-30/573.html">东管头南</a></div>
+                                    <div class="station"><a href="/station/xltcx/linefs/2020-12-30/572.html">首经贸</a></div>
+                                    <div class="station"><a href="/station/xltcx/linefs/2020-12-30/571.html">花乡东桥</a></div>
+                                    <div class="station"><a href="/station/xltcx/linefs/2020-12-30/570.html">白盆窑</a></div>
+                                
+                                    <div class="station"><a href="/station/xltcx/linefs/2013-08-26/248.html">郭公庄</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/254.html">大葆台</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/255.html">稻田</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/256.html">长阳</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/257.html">篱笆房</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/258.html">广阳城</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/259.html">良乡大学城北</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/261.html">良乡大学城</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/262.html">良乡大学城西</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/263.html">良乡南关</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2013-08-26/264.html">苏庄</a></div>
+                                   <div class="station"><a href="/station/xltcx/linefs/2017-12-29/517.html">阎村东</a></div>
+                                
+                <div class="line_name">
+                    <div class="subway_num16">首都机场线</div>
+                </div>
+                                   <div class="station"><a href="/station/xltcx/linejc/2021-12-29/586.html">北新桥</a></div>
+                				                   <div class="station"><a href="/station/xltcx/linejc/2013-08-26/265.html">东直门</a></div>
+                                   <div class="station"><a href="/station/xltcx/linejc/2013-08-26/266.html">三元桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/linejc/2013-08-26/269.html">3号航站楼</a></div>
+                                   <div class="station"><a href="/station/xltcx/linejc/2013-08-26/270.html">2号航站楼</a></div>
+                   
+                <div class="line_name">
+                    <div class="subway_num5" style="background-color:#B35A20;">S1线</div>　　<span style="line-height:30px;"></span>
+                </div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2021-12-29/591.html">苹果园</a></div>
+                				                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/516.html">金安桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/518.html">四道桥</a></div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/519.html">桥户营</a></div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/520.html">上岸</a></div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/521.html">栗园庄</a></div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/522.html">小园</a></div>
+                                   <div class="station"><a href="/station/xltcx/lines1/2017-12-29/523.html">石厂</a></div>
+                            </div>
+            <div class="other" style="display:none;">
+        	<ul>
+               	<li><h2><a href="/attractions/">坐地铁游北京</a></h2><p style="color:#5c5c5c; line-height:1.75em; font-size:12px ; color: rgb(89,89,89); ">北京地铁为您提供完善的换乘指南服务，乘坐地铁便利快捷出行，轻松游遍整个北京！</p></li>
+                <li><h2><a href="/support/swzl/">失物招领</a></h2><p style=" color:#5c5c5c; line-height:1.75em; font-size:12px; color: rgb(89,89,89);  ">提供物品丢失的相关信息与咨询。</p></li>
+                <li><h2><a href="/culture/zbcp/">周边产品</a></h2><p style="color:#5c5c5c; line-height:1.75em; font-size:12px ; color: rgb(89,89,89); ">定期推出文化车票等相关地铁周边产品，更好地展现了北京地铁的新风采、新形象。</p></li>
+                <li><h2><a href="/news/qyxw/">企业新闻</a></h2><p style=" color:#5c5c5c; line-height:1.75em; font-size:12px ; color: rgb(89,89,89); ">第一时间向广大乘客发布北京地铁出行及时信息、行业动态和领导关怀指导与党群动态。</p></li>
+            </ul>
+         </div>     
+        </div> 
+        <div class="side">
+            <div class="search_right" id="firstpane">
+        	<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="http://map.bjsubway.com/">线路图查询</a></div></div>
+   <!--<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/zjgls/">站间公里数</a></div></div>-->
+          	<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/xltcx/">站点及周边信息</a></div></div>
+          	<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/smcsj/">首末车时间</a></div></div>
+                <div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/xltcx/line1/">列车时刻表</a></div></div>
+          	<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/fwss/line1/2013-08-19/4.html">服务设施</a></div></div>
+          	<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/wzass/">无障碍服务设施</a></div></div>
+          	<div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/yktfw/">一卡通服务网点</a></div></div>
+                <div class="menu_head"><div class="search_right_go"></div><div class="search_right_tx"><a href="/station/xltzs/">线路图下载</a></div></div>
+</div>
+            <div class="search_pic">
+          <div class="search_pic_tx"><a href="/jpg.html" style="display:block;" target="_blank">线路图下载</a></div>
+          <div class="search_pic_img"><img src="/subway/images/search_pic.jpg"/></div>
+          <div class="search_pic_img1" ><a href="/jpg.html" target="_blank"/><img src="/subway/images/btn_jpg.jpg" width="140" height="25"/></a></div>
+</div>
+        </div>  
+    </div>
+    <!-- content end -->
+    <div class="bottom">
+    <div class="hot_line">
+        <h1>地铁服务热线：010-96165</h1>
+        <h4 class="records" style='margin-top:-0px; line-height:20px;'><!--京ICP备12042668号-1  京公网安备110403010001 110102000183<br/> -->版权所有 北京市地铁运营有限公司  <a style="cursor:Pointer;color:#fff;" href="https://beian.miit.gov.cn/">京ICP备12042668号-1</a><br/>网站建设：<a style="cursor: text;color:#fff;" href="http://www.syouwadesign.com/">北京市艺彩昭和企业形象设计有限责任公司</a>&nbsp;&nbsp;&nbsp;&nbsp;网站制作维护热线：400-667-1119</h4>
+      </div>
+                 <div class="ljt">
+		   <a href="/contact/"><img src="/subway/images/weixin.png" /></a>
+		   <a href="https://e.weibo.com/bjsubway"><img src="/subway/images/xinlang.png" /></a>
+		   <a href="http://t.qq.com/bjsubway/mine"><img src="/subway/images/tengxun.png" /></a>
+		   <a href="/contact/"><img src="/subway/images/shouji.png" /></a>
+		   <a href="/contact/"><img src="/subway/images/pingguo.png" /></a>
+		   <a href="/contact/"><img src="/subway/images/anzhuo.png" /></a>
+		</div>
+
+	  
+       <script type="text/javascript" src="/subway/js/yqlj2.js"></script>
+       <div class="friendmain">
+        <div class="keleyi-com-menu" style="background:url(/subway/images/friendlink.png) no-repeat;">
+        <ul class="lang">
+        <li class="">
+		  <span style="float:left;color:rgb(89,89,89); line-height:22px; padding-left:2px;">友情链接
+		  <input type="text" value="———请选择——" style="text-align:center;border:0 none; width:150px; color:rgb(89,89,89);" border="0"/>
+		  <img src="/subway/images/down.jpg" width="6px" height="6px"style="margin-top:10px;"/></span>
+         <!--[if IE]>
+        <ul style="display: none;margin-bottom:-19px;background:url(/subway/images/index_links_box.png) no-repeat;width:231px; margin-left:-1px;">
+<![endif]-->
+<!--[if !IE]><!-->
+          <ul style="display: none;margin-bottom:-19px;background:url(/subway/images/index_links_box.png) no-repeat;width:231px; margin-left:-1px;">
+<!--<![endif]-->
+          
+		  
+          <div style="text-align:center;width:224px; background:none; height:35px;">
+ <div style="height:5px;"></div>
+		  <div class="sublogo"><img src="/subway/images/guangzhou.jpg"/></div>
+		  <div class="subname"><a href="http://www.gzmtr.com/" target="_blank" onclick="window.open('http://www.gzmtr.com', '_blank')" style="color:rgb(89,89,89);">广州地铁</a></div>
+		  </div>
+		  
+		  <div style="text-align:center;width:214px; background:none; height:1px; margin-left:5px;background:url(/subway/images/links_linex.jpg);"></div>
+		  
+		  <div style="text-align:center;width:224px; background:none; height:30px;">
+		  <div class="sublogo"><img src="/subway/images/shanghai.jpg"/></div>
+		  <div class="subname"><a href="http://www.shmetro.com/" target="_blank" onclick="window.open('http://www.shmetro.com/', '_blank')" style="color:rgb(89,89,89);">上海地铁</a></div>
+		  </div>
+		  <div style="text-align:center;width:214px; background:none; height:1px; margin-left:5px;background:url(/subway/images/links_linex.jpg);"></div>
+		  
+          <div style="text-align:center;width:224px; background:none; height:30px;">
+		  <div class="sublogo"><img src="/subway/images/tianjin.jpg"/></div>
+		  <div class="subname"><a href="http://www.tjdt.cn/" target="_blank" onclick="window.open('http://www.tjgdjt.com', '_blank')" style="color:rgb(89,89,89);">天津地铁</a></div>
+		  </div>
+		  <div style="text-align:center;width:214px; background:none; height:1px;margin-left:5px;background:url(/subway/images/links_linex.jpg);"></div>
+		
+          <div style="text-align:center;width:224px; background:none; height:30px;">
+		  <div class="sublogo"><img src="/subway/images/xianggang.jpg"/></div>
+		  <div class="subname"><a href="http://www.mtrsz.com.cn" target="_blank" onclick="window.open('http://www.mtrsz.com.cn', '_blank')" style="color:rgb(89,89,89);">港铁深圳</a></div>
+		  </div>
+		  <div style="text-align:center;width:214px; background:none; height:1px;margin-left:5px;background:url(/subway/images/links_linex.jpg);"></div>
+		<div style="text-align:center;width:224px; background:#none; height:30px;">
+		  <div class="sublogo"><img src="/subway/images/jinggang.jpg"/></div>
+		  <div class="subname"><a href="http://www.mtr.bj.cn" target="_blank" onclick="window.open('http://www.mtr.bj.cn', '_blank')" style="color:rgb(89,89,89);">京港地铁</a></div>
+		  </div>
+		  <div style="text-align:center;width:214px; background:none; height:1px;margin-left:5px;background:url(/subway/images/links_linex.jpg);"></div>  
+		<div style="text-align:center;width:224px; background:#none; height:30px;">
+		  <div class="sublogo"><img src="/subway/images/ruyixing.png"/></div>
+		  <div class="subname"><a href="http://www.ruubypay.com" target="_blank" onclick="window.open('http://www.ruubypay.com', '_blank')" style="color:rgb(89,89,89);">如易行科技</a></div>
+		  </div>
+		  <div style="text-align:center;width:214px; background:none; height:1px;margin-left:5px;background:url(/subway/images/links_linex.jpg);"></div> 
+
+          </ul>   
+		    </li>
+          </ul>
+         </div>
+      </div>
+      <script type="text/javascript" src="/subway/js/yqlj1.js"></script>
+</div>
+<div style="display:none"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F01cf1cc88df5ecf7e38164197b4a2001' type='text/javascript'%3E%3C/script%3E"));
+</script></div>
+</div>
+</body>
+</html>

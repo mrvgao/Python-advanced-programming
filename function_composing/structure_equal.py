@@ -3,17 +3,44 @@ from functools import wraps
 from collections import defaultdict
 
 
-def show_called(func):
-    show_called.depth = defaultdict(int)
+def _show_called(func):
+    _show_called.level = 0
 
-    @wraps(func)
-    def _warp(*args, **kwargs):
-        show_called.depth[func] += 1
-        dash = '--'*show_called.depth[func]
-        print(f'{dash} {func.__name__} was called')
-        return func(*args, **kwargs)
-    return _warp
+    def _wrap(*args):
 
+        _show_called.level += 1
+
+        result = func(*args)
+
+        dash = '-' * _show_called.level
+        print(f'{dash} {func.__name__}{args} was called')
+
+        _show_called.level -= 1
+
+        return result
+
+    return _wrap
+
+show_called = _show_called
+
+# def show_called(func):
+#     show_called.depth = defaultdict(int)
+#
+#     @wraps(func)
+#     def _warp(*args, **kwargs):
+#         show_called.depth[func] += 1
+#         dash = '-'*show_called.depth[func]
+#         print(f'{dash} {func.__name__} ({args, kwargs}) was called')
+#         return func(*args, **kwargs)
+#     return _warp
+
+
+
+@_show_called
+def fib(n):
+    if n > 2: return fib(n - 1) + fib(n - 2)
+    else:
+        return 1
 
 @show_called
 def is_number(n):
@@ -119,3 +146,5 @@ print('test structure function done!')
 """
 老师把这几个utility关系画一下吧
 """
+
+fib(10)

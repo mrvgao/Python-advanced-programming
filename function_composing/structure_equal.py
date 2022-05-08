@@ -1,6 +1,7 @@
 from icecream import ic
 from functools import wraps
 from collections import defaultdict
+import time
 
 
 def stringify(obj):
@@ -10,20 +11,49 @@ def stringify(obj):
         return repr(obj)
 
 
+BEGIN = time.perf_counter()
+
+
+def speak(obj):
+    print(f'I am in the level {obj.level}')
+
+
 def _show_called(func):
+    def add_one(obj):
+        obj.level += 1
+
     _show_called.level = 0
     _show_called.stack = defaultdict(list)
+    # _show_called.stack = list()
+    _show_called.add_one = add_one
+    # question-2
+    """"
+    _show_called: 
+        def add_one():
+            pass
+            
+    _show_called.add_one = add_one
+    """
+    _show_called.speak = speak
 
     @wraps(func)
     def _wrap(*args):
 
         try:
-            _show_called.level += 1
+            # t0 = time.perf_counter()
+            # _show_called.level += 1
+            _show_called.add_one(_show_called)
+            # _show_called.speak() = _show_called.speak(_show_called)
+            # _show_called.speak(_show_called)
             result = func(*args)
-            dash = '-' * _show_called.level
-            notation = f'{func.__name__}{" ".join(map(stringify, args))} '
-            print(f'{dash} {notation} was called')
+            dash = '--' * _show_called.level
+            notation = f'{func.__name__}({",".join(map(stringify, args))}) '
+            # print(f'{dash} {notation} was called')
+            global BEGIN
+            elapsed = time.perf_counter() - BEGIN
+            print(f'{elapsed:0.8f}s :: {dash} {notation} was called --> {result}')
             _show_called.stack[func.__name__].append((_show_called.level, notation))
+            # _show_called.stack.append((_show_called.level, notation))
 
         finally:
             _show_called.level -= 1
@@ -46,44 +76,44 @@ show_called = _show_called
 #     return _warp
 
 
-
 @_show_called
 def fib(n):
     if n > 2: return fib(n - 1) + fib(n - 2)
     else:
         return 1
 
-@show_called
+
+@_show_called
+def fac(n):
+    return n * fac(n - 1) if n > 1 else 1
+
+# question-3: seperated multiply objection, each object has self value and method
+
+
 def is_number(n):
     return isinstance(n, (float, int))
 
 
-@show_called
 def only_numbers(elements):
     return is_number(elements) or (list not in set(type(e) for e in elements))
 
 
-@show_called
 def both_empty(test1, test2):
     return len(test1) == len(test2) == 0
 
 
-@show_called
 def same_count_numbers(test1, test2):
     return same_lengths(test1, test2) and only_numbers(test1) and only_numbers(test2)
 
 
-@show_called
 def is_iter_same_len(test1, test2):
     return type(test1) == type(test2) == list and len(test1) == len(test2)
 
 
-@show_called
 def is_single_number(n1, n2):
     return is_number(n1) and is_number(n2)
 
 
-@show_called
 def same_lengths(test1, test2):
     if type(test1) == type(test2) == list:
         return len(test1) == len(test2)
@@ -91,7 +121,6 @@ def same_lengths(test1, test2):
         return False
 
 
-@show_called
 def any_satisfy(funcs):
     def _wrap(*args):
         return any(f(*args) for f in funcs)
@@ -101,7 +130,6 @@ def any_satisfy(funcs):
 basic_true_satisfy = any_satisfy([is_single_number, both_empty, same_count_numbers])
 
 
-@show_called
 def struc_equal(list1, list2, basic_true):
     if basic_true(list1, list2): return True
     if not same_lengths(list1, list2): return False
@@ -171,12 +199,14 @@ def combine_stack(stack_info, func):
     return levels
 
 
+fac(10)
 fib(10)
-for func, values in _show_called.stack.items():
-    print(func)
-    for v in values:
-        print(v)
-
-
-levels = combine_stack(_show_called.stack, fib)
-print(levels)
+# for func, values in _show_called.stack.items():
+#     print(func)
+#     for v in values:
+#         print(v)
+#
+#
+# levels = combine_stack(_show_called.stack, fib)
+# print(levels)
+print(show_called.stack)

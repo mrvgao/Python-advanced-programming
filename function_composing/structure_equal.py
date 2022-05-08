@@ -3,19 +3,30 @@ from functools import wraps
 from collections import defaultdict
 
 
+def stringify(obj):
+    if callable(obj):
+        return obj.__name__
+    else:
+        return repr(obj)
+
+
 def _show_called(func):
     _show_called.level = 0
+    _show_called.stack = defaultdict(list)
 
+    @wraps(func)
     def _wrap(*args):
 
-        _show_called.level += 1
+        try:
+            _show_called.level += 1
+            result = func(*args)
+            dash = '-' * _show_called.level
+            notation = f'{func.__name__}{" ".join(map(stringify, args))} '
+            print(f'{dash} {notation} was called')
+            _show_called.stack[func.__name__].append((_show_called.level, notation))
 
-        result = func(*args)
-
-        dash = '-' * _show_called.level
-        print(f'{dash} {func.__name__}{args} was called')
-
-        _show_called.level -= 1
+        finally:
+            _show_called.level -= 1
 
         return result
 
@@ -147,4 +158,25 @@ print('test structure function done!')
 老师把这几个utility关系画一下吧
 """
 
+
+def combine_stack(stack_info, func):
+    stacks = stack_info[func]
+    levels = [[] for _ in range(len(stacks))]
+
+    for level, notation in stacks:
+        levels[level].append(notation)
+
+    levels = [level for level in levels if level]
+
+    return levels
+
+
 fib(10)
+for func, values in _show_called.stack.items():
+    print(func)
+    for v in values:
+        print(v)
+
+
+levels = combine_stack(_show_called.stack, fib)
+print(levels)

@@ -1,10 +1,7 @@
-from setuptools import setup, Extension
-
-module = Extension('simple_add', sources=['simple_cython.pyx'])
+from setuptools import setup
+from distutils.extension import Extension
+from Cython.Build import cythonize
 
 setup(
-    name='cythonTest',
-    version='1.0',
-    author='jetbrains',
-    ext_modules=[module]
+    ext_modules=cythonize('primer.pyx'),
 )

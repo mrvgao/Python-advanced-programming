@@ -1,5 +1,10 @@
-def function (a: int, b: int) -> str:
+def function (a: int, b : int) -> str:
     return str(a + b)
 
-function(2, 4)
-# function("2", "4")
+def add_with_type(int a, int b):
+    return a + b
+
+def fib(a):
+    return fib(a - 1) + fib(a - 2) if a >= 2 else 1
+
+print('the simple loaded!')

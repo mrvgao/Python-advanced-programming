@@ -40,7 +40,7 @@ def match(pat, text):
     elif len(pat) > 1 and pat[1] in '*?+':
         p, op, _pat = pat[0], pat[1], pat[2:]
         if op == '*':
-            return match(_pat, text) or match_plus(p, _pat, text)
+            return match_plus(p, _pat, text) or match(_pat, text)
         elif op == '?':
             match_with_one = match(p + _pat, text)
             match_without_one = match(_pat, text)
@@ -68,24 +68,28 @@ def search(pat, text):
     return if pat exists in this text
     >>> search('a', 'a')
     'a'
-    # >>> search("a", 'b')
-    # None
-    # >>> search('p?hone', 'phone')
-    # phone
-    # >>> search('p?hone', 'hone')
-    # hone
+    >>> search("a", 'b')
+
+    >>> search('p?hone', 'phone')
+    'phone'
+    >>> search('p?hone', 'hone')
+    'hone'
     >>> search('p?hone', 'this is my honey')
-    honey
+    'hone'
+    >>> search('a*', 'zzz aaa bbb')
+    'aaa'
+    >>> search('^a*', 'zzz aaa bbb')
+
     >>> search('^ph?one*', 'poneeeee something else')
-    poneeeee
+    'poneeeee'
     >>> search('^ph?one*', 'phon')
-    phon
+    'phon'
     >>> search('^ph?one*', 'iphone')
-    None
+
     >>> search('^ph?one*.*!$', 'phone number!')
-    phone number!
+    'phone number!'
     >>> search('^ph?one*.*!$', 'phone number')
-    None
+
     """
     if pat.startswith('^'):
         # e.g ^phone, ^1.*

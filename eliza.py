@@ -2,9 +2,12 @@ import re
 from flatten import flatten
 import random
 from eliza_rules import rule_responses
+from functools import cache
 
 
 PAT = re.compile(r'(\?[\*|\+](\w))')
+CLEAN_1 = re.compile(r'([a-z])')
+CLEAN_2 = re.compile(r'\?([a-z])')
 
 
 def split_by_rule(text, rule):
@@ -27,16 +30,22 @@ def split_by(string, keywords):
     return split_sentence
 
 
+@cache
 def generate_match_case_by_rule(rule):
     split_rule = split_by_rule(rule, rule)
     rule_clean = PAT.sub(r'\g<2>', str(split_rule))
-    rule_clean = re.sub("'([a-z])'", r'\g<1>', str(rule_clean))
+    rule_clean = CLEAN_1.sub(r'\g<1>', str(rule_clean))
 
     return rule_clean
 
 
+@cache
+def get_clean_2_sub(string):
+    return CLEAN_2.sub('{\g<1>}', string)
+
+
 def give_response(response):
-    var_with_arg = [re.sub(r'\?([a-z])', "{\g<1>}", s) for s in response]
+    var_with_arg = [get_clean_2_sub(s) for s in response]
     return var_with_arg
 
 

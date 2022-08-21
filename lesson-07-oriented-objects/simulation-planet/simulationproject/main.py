@@ -1,7 +1,7 @@
 from planet_simulation import Planet
 from planet_simulation import Force
 import matplotlib.pyplot as plt
-from matplotlib import animation
+from matppasslotlib import animation
 import random
 
 

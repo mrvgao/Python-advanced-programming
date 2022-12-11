@@ -4,7 +4,7 @@ This is the source code for *Python Advancwed Programming* course I taught for P
 
 This is the outline for the course: 
 
-1. Lesson-01: Pattern Match, DataClass, Python Dynamic Mechanism;
++. Lesson-01: Pattern Match, DataClass, Python Dynamic Mechanism;
 2. Lesson-02: Generator, Decorator, Map / Filter / Reduce; 
 3. Lesson-03: Function tools, Conext Manager; 
 4. Lesson-04: Python value scope, data ref, memory view, persisting; 
